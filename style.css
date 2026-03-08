@@ -1,0 +1,12 @@
+body{
+    background-color: #101112;
+}
+button, input{
+    background-color: #242424;
+    color: white;
+    border: 0;
+    padding: 10px;
+}
+button:hover, input:hover{
+    background-color: #3b3b3b;
+}
