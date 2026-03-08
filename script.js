@@ -5,6 +5,7 @@ let promocaoBtn = document.getElementById('promocao');
 let amountInput = document.getElementById('amountInput');
 let priceInput = document.getElementById('priceInput');
 let categoriaBtn = document.getElementById('categoriaBtn');
+let categoriaList = document.getElementById('categoriaList');
 
 //Vars & Arrays
 let produtos = [
@@ -118,19 +119,24 @@ function filtrarpreco(){
 }
 
 function ValorTotalPorCategoria(){
-        produtos.forEach((value) => {
-            let preco = Object.values(value)[1];
-            let quantidade = Object.values(value)[2];
-            let categoria = Object.values(value)[3];
-            let valorTotal = preco * quantidade;
-            if (categorias[categoria]) {
-                categorias[categoria] += valorTotal;
-            }else{
-                categorias[categoria] = valorTotal;
-            }
-        });
-        console.log('Categorias:', categorias);
-        categorias = {};
+    produtos.forEach((value) => {
+        let preco = Object.values(value)[1];
+        let quantidade = Object.values(value)[2];
+        let categoria = Object.values(value)[3];
+        let valorTotal = preco * quantidade;
+        if (categorias[categoria]) {
+            categorias[categoria] += valorTotal;
+        }else{
+            categorias[categoria] = valorTotal;
+        }
+    });
+    categoriaList.innerHTML = '';
+    for (const categoria in categorias) {
+        item = document.createElement('p');
+        item.textContent = `${categoria}: R$ ${categorias[categoria].toFixed(2)}`;
+        categoriaList.appendChild(item);
+    }
+    categorias = {};
 }
 
 function definirLimite(){
