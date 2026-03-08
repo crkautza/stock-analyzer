@@ -10,3 +10,6 @@ button, input{
 button:hover, input:hover{
     background-color: #3b3b3b;
 }
+input{
+    width: 250px;
+}
