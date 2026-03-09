@@ -1,18 +1,101 @@
 body{
+    width: 100vw;
+    margin: 0;
     background-color: #101112;
 }
-button, input{
-    background-color: #242424;
+
+input, button{
+    border: none;
     color: white;
-    border: 0;
+    background-color: #1a1b1d;
+}
+
+h1, h2{
+    color: white;
+}
+
+p{
+    color: white;   
+}
+
+button:hover, input:hover, input:focus{
+    background-color: #101112;
+}
+
+button:disabled{
+    background-color: #2d2f30;
+}
+
+.container-principal{
+    display: flex;
+}
+
+.coluna-esquerda{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.coluna-direita{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1{
+    margin: 20px;
+    padding: 50px;
+    height: 800px;
+    background-color: #1f2020;
+    border-radius: 8px;
+}
+
+.container-2{
+    margin: 20px;
+    padding: 70px;
+    width: 20vw;
+    height: 300px;
+    background-color: #1f2020;
+    border-radius: 8px;
+}
+
+.inputForm{
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formBtn{
+    width: 422px;
+    height: 40px;
     padding: 10px;
 }
-button:hover, input:hover{
-    background-color: #3b3b3b;
+
+.h1Form{
+    text-align: center;
 }
-input{
-    width: 250px;
+
+.btn{
+    width: 208px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
-ul{
-    color: white;
+
+.btnClear{
+    width: 420px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input{
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
 }

@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Analyzer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <button id="filtrarMin">Filtrar Stock por quantidade</button>
-    <button id="promocao">Filtrar Stock por Preço</button>
-    <input id="amountInput" type="number" placeholder="Defina aqui o limite de quantidade">
-    <input id="priceInput" type="number" placeholder="Defina aqui o limite de preço">
-    <button id="limite">Definir Limites</button>
-    <button id="categoriaBtn">Valor Total por Categoria</button>
-    <ul id="categoriaList"></ul>
+    <div class="container-principal">
+        <div class="coluna-esquerda">
+            <div class="container-1">
+                <button class="btn" id="filtrarMin">Filtrar Stock por quantidade</button>
+                <button class="btn" id="promocao">Filtrar Stock por Preço</button>
+                <button class="btn" id="limite">Definir Limites</button>
+                <button class="btn" id="categoriaBtn">Valor Total por Categoria</button>
+                <input class="input" id="amountInput" type="number" placeholder="Defina aqui o limite de quantidade">
+                <input class="input" id="priceInput" type="number" placeholder="Defina aqui o limite de preço">
+                <button class="btnClear" id="limparBtn">Limpar Textos</button>
+                <button class="btnClear" id="limparLimiteBtn">Limpar Limite</button>
+                <ul id="categoriaList"></ul>
+            </div>
+        </div>
+        <div class="coluna-direita">
+            <form action="">
+                <div class="container-2">
+                    <h1 class="h1Form">Adicionar Produtos</h1>
+                    <input id="produtosNome" class="inputForm" type="text" placeholder="Nome" required>
+                    <input id="produtosPreco" class="inputForm" type="number" placeholder="Preço" required>
+                    <input id="produtosQuantidade" class="inputForm" type="number" placeholder="Quantidade" required>
+                    <input id="produtosCategoria" class="inputForm" type="text" placeholder="Categoria" required>
+                    <button id='atualizar' type="button" class="formBtn">Atualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
