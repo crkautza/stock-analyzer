@@ -15,7 +15,7 @@ Sistema de análise de estoque desenvolvido em JavaScript puro, HTML e CSS. O pr
 ## Tecnologias utilizadas
 
 - HTML5
-- CSS3 (Flexbox)
+- CSS3 (layout otimizado para desktop)
 - JavaScript (puro, sem frameworks)
 
 ## Como usar
@@ -46,11 +46,15 @@ stock-analyzer/
 3. Clique em **Valor Total por Categoria** para visualizar a soma total de cada categoria.
 4. Preencha o formulário e clique em **Atualizar** para adicionar um novo produto.
 
+## Observações
+
+Este projeto teve como foco principal a lógica JavaScript, manipulação de dados e persistência com localStorage. A interface é otimizada para desktop, não sendo responsiva para dispositivos móveis.
+
 ## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-**GitHub:** [github.com/crkautza](https://github.com/crkautza)
-**Linkedin:** [linkedin.com/in/crkautza](https://www.linkedin.com/in/crkautza)
+**GitHub:** [github.com/crkautza](https://github.com/crkautza)  
+**LinkedIn:** [linkedin.com/in/crkautza](https://www.linkedin.com/in/crkautza)
